@@ -6,7 +6,7 @@ jobs:
 
     steps:
       - name: checkout repo actions 
-       uses: actions/checkout@v4
+        uses: actions/checkout@v4
        
       - name: use node.js
         uses: actions/setup-node@v4
