@@ -5,14 +5,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      -name: checkout repo actions
+      - name: checkout repo actions 
        uses: actions/checkout@v4
-      -name: ise node.js
-       uses: actions/setup-node@v4
-       with:
+       
+      - name: use node.js
+        uses: actions/setup-node@v4
+        with:
          node-version: '20.x'
-      -run: npm install
-      -run: npm run build
+      - run: npm install
+      - run: npm run build
       
         
          
